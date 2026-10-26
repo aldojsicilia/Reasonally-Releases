@@ -1,0 +1,37 @@
+name: Bug report
+description: Report a problem with Reasonally on macOS
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Reasonally version
+      description: Include the release version and whether it is a beta.
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+    validations:
+      required: true
+  - type: dropdown
+    id: architecture
+    attributes:
+      label: Mac architecture
+      options:
+        - Apple Silicon
+        - Intel
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include what you expected and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or screenshots
+      description: Remove API keys and private project content before sharing.
